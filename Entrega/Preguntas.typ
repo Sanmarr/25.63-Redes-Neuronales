@@ -1,7 +1,7 @@
 #import "@preview/codly:1.3.0": *
 #import "@preview/codly-languages:0.1.1": *
 #show: codly-init.with()
-
+#codly(languages: codly-languages)
 
 #set heading(numbering: "1. 1. 1.")
 
@@ -9,20 +9,15 @@
   size: 9pt
 )
 
-#set page(columns: 2,
+#set page(columns: 1,
 margin: (
   top: 3cm,
   bottom: 2cm,
   x: 0.8cm,
-))
+)
+)
 
 
-#codly(languages: codly-languages)
-
-#outline()
-#pagebreak()
-
-#set page(columns: 1)
 #set text(size: 11pt)
 
 = Preguntas sobre el ejemplo de clasificación de imágenes con PyTorch y MLP
